@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Character from "./components/Character";
+import CharacterList from "./components/CharacterList";
 import './App.css';
 
 class App extends Component {
@@ -6,8 +8,11 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: []
+      
+      
     };
   }
+  
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -33,9 +38,16 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+        <div className="CharContain"> 
+        <CharacterList characters = {this.state.starwarsChars} />
+        </div>
+        
       </div>
     );
   }
 }
+
+
 
 export default App;
