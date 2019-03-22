@@ -9,7 +9,7 @@ function Character(props) {
             <div className="character-info">
                 <h2>{props.character.name}</h2>
                     <p>
-                        <strong>Homeworld:</strong> {props.character.homeworld}
+                        {props.character.homeworld}
                     </p>
                     <p>
                         <strong>Gender:</strong> {props.character.gender}

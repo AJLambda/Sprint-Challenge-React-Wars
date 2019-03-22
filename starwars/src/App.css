@@ -7,7 +7,12 @@
 }
 /* write your parent styles in here for your App.js */
 
-.characterList{
-  display: flex;
-  flex-wrap: wrap;
+h2 {
+  color: gold;
+  background: rgba(0,0,0,0.8);
+}
+
+.CharContain {
+  margin: 20px;
+  background: rgba(0,0,0,0.3);
 }
